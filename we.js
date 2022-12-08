@@ -21,8 +21,8 @@ function selsearch(placev) {
 function displayData(data) {
     plcname.innerHTML = data.name
     let curFaren = data.main.temp
-    let curCel = Math.floor(5 / 9 * (curFaren - 32));
-    degree.innerHTML = `${curCel}&#176;`
+    let curCel = Math.floor(curFaren-273.15);
+    degree.innerHTML = `${curCel}&#176c`
     winds.innerHTML= `${data.wind.speed} km/h`
     humid.innerHTML= `${data.main.humidity} %`
     cloudper.innerHTML= `${data.clouds.all} %`
