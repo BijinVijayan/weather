@@ -35,6 +35,14 @@ function displayData(data) {
     weaths.innerHTML=`<img src="./sun.png"  alt="icon" width="50" height="50">`
     document.getElementById("weather-app").style.backgroundImage="url('./sky.jpg')"
 }
+else if(data.weather[0].main=='Cloud'){
+    weaths.innerHTML=`<img src="./cloudy.png"  alt="icon" width="50" height="50">`
+    document.getElementById("weather-app").style.backgroundImage="url('./clouds.jpg')"
+}
+else if(data.weather[0].main=='Rain'){
+    weaths.innerHTML=`<img src="./cloudy.png"  alt="icon" width="50" height="50">`
+    document.getElementById("weather-app").style.backgroundImage="url('./rain.jpg')"
+}
 else{
     weaths.innerHTML=`<img src="./cloudy.png"  alt="icon" width="50" height="50">`
     document.getElementById("weather-app").style.backgroundImage="url('./clouds.jpg')"
