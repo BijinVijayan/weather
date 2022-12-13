@@ -27,8 +27,7 @@
                     <div>
                         <h2 class="name" id="plcname">Chennai</h2>
                         <small>
-                            <span class="time">16:00</span>-
-                            <span class="date">monday sep 2022</span>
+                            <span id="time">16:0 sep 22</span>
                         </small>
                     </div>
                     <div class="weather">
@@ -43,7 +42,7 @@
         <div class="panel">
             <form action="" id="locationInput">
                 <input type="text" class="search" id="cName" placeholder="Search Location...">
-                <button type="button" onclick="search()" class="submit">
+                <button type="button" onclick="search()" id="search" class="submit">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
@@ -82,5 +81,13 @@
 </body>
 <script src="./we.js"></script>
 <script src="https://kit.fontawesome.com/a66f173e7a.js" crossorigin="anonymous"></script>
+<script>
+   var date = new Date().getDate();
+   var day = new Date().getDay();
+   var year = new Date().getFullYear();
+console.log(datetime);
+document.getElementById("time").textContent = "`${date} ${day} ${year}`"
 
+
+</script>
 </html>
